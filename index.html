@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <h1>To-Do List</h1>
+        <div class="contact-icons"><a href="https://github.com/ithan3215"><i class="bi bi-github"></i></a><a href="https://www.linkedin.com/in/neithan-brito-b93744346/"><i class="bi bi-linkedin"></i></a></div>
+    </header>
+    
+   
+    <form action="submit" id="forms">
+
+    
+<h3 class="add-title">Start by adding a task</h3>
+        
+    <input type="text" id="inputTask" placeholder="Add a task" class="form-control validate">
+
+    <button type="submit" class="add-button">Add</button>
+
+    <small id="small"></small>
+
+    </form>
+    
+<div class="task-space">
+    <div class="listTitleContainer"><h1 class="listTitle">Pending Tasks</h1><i class="bi bi-sort-alpha-down sort" id="sortA"></i></div>
+    <ol id="taskElements" class="items-box">
+        
+    </ol>
+</div>
+<div class="task-space">
+    <div class="listTitleContainer"><h1 class="listTitle">Completed Tasks</h1><i class="bi bi-sort-alpha-down sort" id="sortB"></i></div>
+    <ol id="taskElementsCompleted" class="items-box">
+        
+    </ol>
+    
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+</html>
